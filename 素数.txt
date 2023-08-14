@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+	int i=0;
+	int count =0;
+
+	for(i=100;i<=200;i++)//100至200之间的数
+	{
+		int a=0;
+		for(a=2;a<i;a++)//被除数
+		{
+			if(i%a==0)
+				break;//
+		}//当a=i是跳出循环
+		if(i==a)
+		{
+			count++;
+			printf("%d\n",i);
+		}
+	}
+	printf("%d\n",count);
+	return 0;
+}

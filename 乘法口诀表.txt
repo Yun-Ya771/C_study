@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void Mul_Tab(int n) {
+	int a = 0;
+	int b = 0;
+	for (a = 1; a <= n; a++) {
+		for (b = 1; b <= a; b++) {
+			printf("%dx%d=%2d ", a, b, a * b);
+		}
+		printf("\n");
+	}
+
+}
+
+int main () {
+	int N = 0;
+	printf("请输入：\n");
+	scanf("%d", &N);
+	Mul_Tab(N);
+}

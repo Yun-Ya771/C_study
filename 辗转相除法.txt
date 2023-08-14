@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int m = 0;
+    int n = 0;
+    int tmp = 0;
+    printf("请输入两个整数: ");
+    scanf("%d %d", &m, &n);
+
+    while (tmp = m % n)/*要认清=为赋值，==为等于，
+		        括号内用来判断真假，非0则为真会一直循环到为零才会跳出循环*/
+    {
+        m = n;
+        n = tmp;
+    } 
+     //辗转相除法，欧几里得
+    printf("最大公约数为:%d\n", n);
+    return 0;
+}
